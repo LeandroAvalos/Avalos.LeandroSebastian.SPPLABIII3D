@@ -1,0 +1,74 @@
+{
+  "animales": [
+    {
+      "id": 1668971300866,
+      "titulo": "Cata",
+      "descripcion": "Perrita chiquita",
+      "animal": "Perro",
+      "precio": "8500",
+      "raza": "Caniche",
+      "fecha": "2022-11-10",
+      "vacuna": "si"
+    },
+    {
+      "id": 1668971504036,
+      "titulo": "Juan",
+      "descripcion": "Gatito chiquito",
+      "animal": "Gato",
+      "precio": "4000",
+      "raza": "Callejero",
+      "fecha": "2022-11-18",
+      "vacuna": "si"
+    },
+    {
+      "id": 1669155702494,
+      "titulo": "Michino",
+      "descripcion": "Un Buen Gatito",
+      "animal": "Gato",
+      "precio": "18000",
+      "raza": "Callejero",
+      "fecha": "2022-11-02",
+      "vacuna": "si"
+    },
+    {
+      "id": 1669155746574,
+      "titulo": "Merlin",
+      "descripcion": "Un Gato Gordo",
+      "animal": "Gato",
+      "precio": "10000",
+      "raza": "Toxido",
+      "fecha": "2022-11-03",
+      "vacuna": "no"
+    },
+    {
+      "id": 1669155780446,
+      "titulo": "Circe",
+      "descripcion": "Una Gatita Negra",
+      "animal": "Gato",
+      "precio": "7000",
+      "raza": "Negra",
+      "fecha": "2022-11-04",
+      "vacuna": "no"
+    },
+    {
+      "id": 1669155816246,
+      "titulo": "Firulais",
+      "descripcion": "Un Perro Cariñoso",
+      "animal": "Perro",
+      "precio": "6000",
+      "raza": "Dogo",
+      "fecha": "2022-11-05",
+      "vacuna": "no"
+    },
+    {
+      "id": 1669156187767,
+      "titulo": "Pedrito",
+      "descripcion": "Un Perro Vago",
+      "animal": "Perro",
+      "precio": "20000",
+      "raza": "Siberiano",
+      "fecha": "2022-11-06",
+      "vacuna": "si"
+    }
+  ]
+}

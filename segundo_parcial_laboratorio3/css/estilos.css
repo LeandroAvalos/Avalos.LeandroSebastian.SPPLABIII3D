@@ -1,0 +1,253 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* .logo{
+    width: 100px;
+} */
+
+.link-logo{
+    width: 100px;
+    margin-left: 20px;
+}
+
+.iconos{
+    width: 30px;
+    margin-left: 15px;
+}
+
+/* .contenedor{
+    margin : 0 auto;
+    max-width: 80%;
+    display:flex;
+    flex-direction : column;
+} */
+
+h1{
+    text-align: center;
+}
+
+/* .oculto{
+    display:none;
+} */
+
+/* .titulo-icono{
+    display: inline;
+} */
+
+
+.radio-modificacion{
+    margin-bottom: 15px;
+}
+
+input{
+    background-color: lightgrey;
+    border-radius: 1rem;
+    height: 1.5rem;
+    text-align: center;
+}
+
+/* .formulario {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: monospace;
+} */
+
+/* .input-modificacion{
+    width: 95%;
+} */
+
+h3, span, legend{
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding-bottom: 10px;
+    margin-left: 15px;
+}
+
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.botones{
+    font-size: 15px;
+}
+
+#btnSubmit{
+    height: 3rem;
+    width: 6.5rem;
+    text-align: right;
+    padding-right: 0.5rem;
+    font-size: 1rem;
+    /* background-color: lightgreen; */
+    border-color: white;
+    border-radius: 0.5rem;
+    margin: 1.3rem;
+    background-image: url('../images/save.svg');
+    background-position: 0.4rem;
+    background-size: 1.3rem;
+    background-repeat:no-repeat;
+}
+
+#btnEliminar{
+    height: 3rem;
+    width: 6.5rem;
+    text-align: right;
+    padding-right: 0.5rem;
+    font-size: 1rem;
+    /* background-color: lightcoral; */
+    border-color: white;
+    border-radius: 0.5rem;
+    background-image: url('../images/delete.svg');
+    margin: 1.3rem;
+    background-position: 0.4rem;
+    background-size: 1.3rem;
+    background-repeat:no-repeat;
+}
+
+#btnLimpiar{
+    height: 45px;
+    width: 6.5rem;
+    text-align:right;
+    padding-right: 0.5rem;
+    font-size: 1rem;
+    /* background-color: lightblue; */
+    border-color: white;
+    border-radius: 0.5rem;
+    background-image: url('../images/limpieza.png');
+    margin: 1.3rem;
+    background-position: 0.4rem;
+    background-size: 1.3rem;
+    background-repeat:no-repeat;
+}
+
+header{
+    /* display: flex; */
+    background-color: orangered;
+    /* justify-content: space-between;
+    padding: 0px 30px;
+    text-decoration: none;
+    align-items: center; */
+}
+
+nav {
+    display: flex;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    background-color: orangered;
+    padding: 0px 14.7px;
+}
+
+nav>ul{
+    list-style-type: none;
+}
+
+/* footer>nav>ul{
+    display: flex;
+    list-style-type: none;
+} */
+
+footer{
+    /* display: flex;
+    justify-content: space-between;
+    height: 100px;
+    margin-top: 25px;
+    align-items: center; */
+    background-color: orangered;
+    color: white;
+    /* padding: 0 50px;
+    text-align: center;
+    bottom: 0; */
+}
+
+header img{
+    width: 250px;
+}
+
+/* #img-main{
+    width: 100%;
+    height: 500px;
+} */
+
+table{
+    margin: 0;
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    overflow: scroll;
+}
+
+th{
+    margin: 0;
+    border: 1px solid black;
+    padding: 1rem 1rem;
+    background-color: rgb(68, 151, 230);
+}
+
+tr{
+    margin: 0;
+    font-size: 1rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+    text-transform: capitalize;
+}
+
+tr:hover{
+    filter:brightness(90%);
+    cursor:pointer;
+}
+
+td{
+    margin: 0;
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+    padding: 1rem 1rem;
+    text-transform: capitalize;
+}
+
+/* #filtro-general{
+    margin: 0 auto;
+    width: 700px;
+    background-color: orange;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+} */
+
+/* #filtro{
+    background-color: lightgrey;
+    border-radius: 10px;
+    border-color: white;
+    height: 20px;
+    text-align: center;
+    width: 95%;
+    margin-left: 15px;
+} */
+
+/* #promedio{
+    width: 95%;
+    margin-left: 15px;
+    margin-bottom: 10px;
+} */
+
+/* .container-filtros>label{
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.container-filtros{
+    display:flex;
+    justify-content: center;
+} */

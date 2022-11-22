@@ -1,0 +1,19 @@
+.inputError {
+    border: 1px solid red;
+    box-shadow: 0 0 5px red;
+  }
+  .inputOk {
+    border: 1px solid green;
+    box-shadow: 0 0 5px green;
+  }
+  
+  .danger {
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+  small {
+    display: block;
+  }
+  

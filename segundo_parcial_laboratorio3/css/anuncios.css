@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    background-image: url(../images/banner2.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+h1{
+    text-align: center;
+}
+
+.link-logo{
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+}
+
+nav{
+    margin-top: 35px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 0px 15px;
+}
+
+div>p{
+    padding-left: 5px;
+}
+
+nav>ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+.texto{
+    position: absolute;
+    top: 90%;
+    left: 1%;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.tarjeta{
+    background-color: lightgrey;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 15px;
+    padding: 15px;
+    width: 600px;
+}
+
+.tarjeta-item{
+    margin: 5px 10px 5px 10px;
+}
+.tarjeta-titulo{
+    text-align: center;
+}
+
+.tarjeta-transaccion{
+    text-align: center;
+}
+
+.tarjeta-descripcion{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.tarjeta-precio{
+    font-size: 20px;
+    color: green;
+    text-align: center;
+}
+
+.tarjeta-precio::before{
+    content: "$";
+}
+
+.icono-contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+.iconos{
+    width: 30px;
+    padding-left: 5px;
+}
+
+.ver-mascota-btn{
+    width: 95%;
+    height: 30px;
+    background-color: orange;
+}
+
+button{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+
+
+    nav{
+        margin: 30px;
+    }
+
+    nav>ul{
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+
+    }
+
+    header ul li a{
+        font-size: 20px;
+    }
+
+    li{
+        padding: 3px;
+    }
+
+    .form{
+        margin : 0 auto;
+        max-width: 450px;
+    }
+
+    .controles{
+        width: 93%;
+    }
+    
+}

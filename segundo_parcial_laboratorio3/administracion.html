@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/validaciones.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Administracion</title>
+</head>
+
+<body>
+    <header class="d-flex justify-content-between align-items-center p-2">
+        <a href="./index.html" class="link-logo ms-5"><img src="./images/logo.png" alt="logo" class="img-fluid"></a>
+        <nav class="me-5">
+            <ul>
+                <li><a href="./index.html">Nosotros</a></li>
+                <li><a href="./administracion.html">Administracion</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Administracion</h1>
+        <img src="./images/banner.jpg" alt="banner-animales" id="img-main" class="img-fluid w-100">
+        <div class="d-flex col-12 justify-conten-center flex-column align-items-center">
+            <form class="d-flex col-8 flex-column justify-conten-evenly">
+                <fieldset class="bg-secondary bg-opacity-25 p-5 rounded-3 my-3 d-flex flex-column align-items-center">
+                    <legend class="d-flex justify-content-center">Informacion del Anuncio</legend>
+
+                    <input type="hidden" name="id">
+
+                    <div class="d-flex flex-column col-10">
+                        <h3 class="m-0">Titulo</h3>
+
+                        <input type="text" name="titulo" placeholder="Titulo" class="d-flex" autocomplete="off"
+                            required>
+                        <span></span>
+                        <br><br>
+                    </div>
+
+                    <div class="d-flex flex-column col-10">
+                        <h3 class="m-0">Descripcion</h3>
+                        <input type="text" name="descripcion" placeholder="Descripcion" class="d-flex"
+                            autocomplete="off" required>
+                        <span></span>
+                        <br><br>
+                    </div>
+
+                    <div class="d-flex flex-column col-10">
+                        <h3 class="m-0">Animal</h3>
+                        <div>
+                            <span>Perro</span>
+                            <input type="radio" name="animal" value="Perro" class="radio-modificacion" checked><br>
+                        </div>
+                        <div>
+                            <span>Gato</span>
+                            <input type="radio" name="animal" value="Gato" class="radio-modificacion"><br>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column col-10">
+                        <h3 class="m-0">Precio</h3>
+                        <input type="number" name="precio" placeholder="Precio" class="d-flex"
+                            autocomplete="off" required>
+                        <span></span>
+                        <br><br>
+                    </div>
+
+                    <div class="d-flex flex-column col-10">
+                        <div class="d-flex flex-row">
+                            <img src="./images/perro.png" alt="Icono perro" class="iconos">
+                            <h3 class="titulo-icono m-0 ms-3">Raza</h3>
+                        </div>
+                        <input type="text" name="raza" placeholder="Raza" class="d-flex"
+                            autocomplete="off" required>
+                        <span></span>
+                        <br><br>
+                    </div>
+
+                    <div class="d-flex flex-column col-10">
+                        <div class="d-flex flex-row">
+                            <img src="./images/ciguena.png" alt="Cigueña" class="iconos">
+                            <h3 class="titulo-icono m-0 ms-3">Fecha de Nacimiento</h3>
+                        </div>
+                        <input type="date" name="fecha" placeholder="Fecha" class="cd-flex"
+                            autocomplete="off" required>
+                        <span></span>
+                        <br><br>
+                    </div>
+
+                    <div class="d-flex flex-column col-10">
+                        <div class="d-flex flex-row">
+                            <img src="./images/jeringuilla.png" alt="Vacuna" class="iconos">
+                            <h3 class="titulo-icono m-0 ms-3">Vacuna</h3>
+                        </div>
+                        <select name="vacuna" class="d-flex col-6 mx-2 rounded-3 btn btn-secondary">
+                            <option value="si">Si</option>
+                            <option value="no">No</option>
+                        </select>
+                        <span></span>
+                        <br><br>
+                    </div>
+
+                    <div>
+                        <input type="submit" id="btnSubmit" value="Guardar" class="botones btn btn-success">
+                        <input type="button" id="btnEliminar" class="botones btn btn-danger invisible" value="Eliminar">
+                        <input type="button" id="btnLimpiar" class="botones btn btn-primary invisible" value="Limpiar">
+                    </div>
+
+
+                </fieldset>
+            </form>
+            <div id="filtro-general" class="d-flex col-8 bg-warning flex-row justify-content-between p-4 rounded-3">
+                <div class="d-flex flex-column col-4 mx-2 justify-content-start mx-5">
+                    <label for="filtrar" class="mx-2 fw-bold text-dark"> FILTRAR ANIMAL</label>
+                    <select name="filtrar" id="filtro" class="d-flex col-6 mx-2 rounded-3 btn btn-secondary">
+                        <option name="filtrar" value="Todos" selected>Todo</option>
+                        <option name="filtrar" value="Perro">Perro</option>
+                        <option name="filtrar" value="Gato">Gato</option>
+                    </select>
+                </div>
+
+                <div class="mx-2 justify-content-start m-0 d-flex flex-column overflow-hidden">
+                    <label for="promedio" class="fw-bold text-dark">PROMEDIO</label>
+                    <input type="text" name="promedio" id="promedio" class="h-75" placeholder="N/A" disabled>
+                </div>
+            </div>
+
+            <div class="container-filtros">
+
+                <div class="d-flex flex-row">
+                    <label class="form-check-label m-2"><input type="checkbox" id="cboxtitulo" value="titulo" class="cbox form-check-input" name="titulo">Titulo
+                    </label>
+    
+                    <label class="form-check-label m-2"><input type="checkbox" id="cboxdescripcion" value="descripcion" class="cbox form-check-input"
+                            name="descripcion">Descripcion
+                    </label>
+    
+                    <label class="form-check-label m-2"><input type="checkbox" class="cbox form-check-input" id="cboxanimal" value="animal" name="animal">Animal
+                    </label>
+                </div>
+                <label class="form-check-label m-2"><input type="checkbox" class="cbox form-check-input" id="cboxprecio" value="precio" name="precio">Precio
+                </label>
+                
+                <label class="form-check-label m-2"><input type="checkbox" class="cbox form-check-input" id="cboxraza" value="raza" name="raza">Raza
+                </label>
+
+                <label class="form-check-label m-2"><input type="checkbox" class="cbox form-check-input" id="cboxfecha" value="fecha" name="fecha">Fecha
+                </label>
+
+                <label class="form-check-label m-2"><input type="checkbox" class="cbox form-check-input" id="cboxpvacuna" value="Vacuna" name="vacuna">Vacuna
+                </label>
+            </div>
+
+            <div id="spinner-container"></div>
+
+            <div class="d-flex mb-3 p-0 col-8 justify-content-center table-responsive">
+                <div id="divLista" class="d-flex w-100"></div>
+            </div>
+
+        </div>
+    </main>
+    <footer class="d-flex justify-content-between align-items-center col-12 pe-4">
+        <nav>
+            <ul class="d-flex py-4">
+                <li><a href="./index.html">Nosotros</a></li>
+                <li><a href="./administracion.html">Administracion</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <p>Todos los derechos reservados <date>2022</date>&copy;</p>
+    </footer>
+    <script src="./js/app.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
